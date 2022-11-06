@@ -1,0 +1,79 @@
+/* background image */
+
+* {
+    font-family: 'Mali', sans-serif;
+}
+
+body {
+    background-image: url('./bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+#Main {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+#forum {
+    min-width: 50%;
+    text-align: center;
+}
+
+#forum_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* make items group */
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    /* scroll */
+    overflow: scroll;
+}
+
+.forum_card {
+    font-size: 1.3vh;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+}
+
+.forum_card_sample {
+    max-width: 50%;
+    font-size: 1.3vh;
+    background-color: rgba(17, 17, 17, 0.5);
+    color: white;
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+    /* make this element center*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rabay {
+    min-width: 50%;
+    text-align: center;
+}
+
+.bon_button {
+    font-size: 3vh;
+    min-width: 10%;
+    min-height: 5%;
+    background-color: rgb(246, 245, 245);
+    color: rgb(13, 13, 13);
+    border-radius: 10px;
+    padding: 1vh;
+    margin: 1vh;
+}
