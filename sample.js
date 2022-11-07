@@ -48,8 +48,7 @@ function makeform(name, des){
 
 function sample_submit(name, des) {
     var forum_list = document.getElementById("forum_list");
-    makeform(name, des).then(function(form){
-        forum_list.innerHTML += form
-    })
+    const mform = makeform(name, des);
+    forum_list.innerHTML += mform;
 
 }
