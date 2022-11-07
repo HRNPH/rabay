@@ -21,8 +21,8 @@ fdog.onkeydown = function(e) {
 }
 
 function updatesample() {
-    msg_sample.innerHTML = fbon.value;
-    name_sample.innerHTML = fdog.value;
+    msg_sample.innerText = fbon.value;
+    name_sample.innerText = fdog.value;
 }
 
 function submit() {
@@ -30,8 +30,8 @@ function submit() {
     var audio = new Audio('./bark.mp3');
     audio.play();
     // get value from input
-    var dog = msg_sample.value;
-    var bon = name_sample.value;
+    var dog = msg_sample.innerText;
+    var bon = name_sample.innerText;
     // check value
     if (dog == "" || bon == "") {
         alert("กรุณากรอกข้อมูลให้ครบ");
