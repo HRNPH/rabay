@@ -37,6 +37,19 @@ function submit() {
         alert("กรุณากรอกข้อมูลให้ครบ");
     } else {
         // submit form
-        console.log("submit");
+        sample_submit(dog, bon);
     }
+}
+
+function makeform(name, des){
+    const form = `<div class="forum_card"><h1>${name}</h1><p><span>- </span><span>หมา</span>${des}<span> -</span></p></div>`
+    return form
+}
+
+function sample_submit(name, des) {
+    forum_list = document.getElementById("forum_list");
+    makeform(name, des).then(function(form){
+        forum_list.innerHTML += form
+    })
+
 }
