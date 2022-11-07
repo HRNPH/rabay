@@ -41,12 +41,13 @@ function submit() {
     }
 }
 
-function makeform(name, des){
-    const form = `<div class="forum_card"><h1>${name}</h1><p><span>- </span><span>หมา</span>${des}<span> -</span></p></div>`
-    return form
-}
+
 
 function sample_submit(name, des) {
+    function makeform(name, des){
+        const form = `<div class="forum_card"><h1>${name}</h1><p><span>- </span><span>หมา</span>${des}<span> -</span></p></div>`
+        return form
+    }
     var forum_list = document.getElementById("forum_list");
     const mform = makeform(name, des);
     forum_list.innerHTML += mform;
